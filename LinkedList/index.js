@@ -1,75 +1,26 @@
-class Node {
-  constructor(element) {
-    this.element;
-    this.next = null;
-  }
-}
+let LinkedList = require("./linkedlist");
 
-class LinkedList {
-  constructor() {
-    this.head = null;
-    this.size = o;
-  }
+let list = new LinkedList();
 
-  add(element) {
-    let node = new Node(element);
-    let current;
+console.clear();
 
-    if (this.head == null) {
-      this.head = node;
-    } else {
-      current = this.head;
+console.log(list.isEmpty());
 
-      while (current.next) {
-        current = current.next;
-      }
-      current.next = node;
-    }
-    this.size++;
-  }
+list.add(10);
+list.add(20);
+list.add(30);
+list.add(40);
+list.add(50);
 
-  insertAt(element, index) {
-    if (index < 0 || index > this.size) {
-      console.log("Invalid index.");
-    } else {
-      let node = new Node(element);
-      let previous, current;
-      current = this.head;
-      if (index == 0) {
-        node.next = this.head;
-        this.head = node;
-      } else {
-        current = this.head;
-        let iteration = 0;
-        while (iteration < index) {
-          iteration++;
-          previous = current;
-          current = current.next;
-        }
-        node.next = current;
-        previous.next = node;
-      }
-      this.size++;
-    }
-  }
+list.insertAt(20, 1);
+console.log(list.printList());
 
-  removeFrom(index) {
-    if (index < 0 || index > this.size) {
-      console.log("Invalid index.");
-    } else {
-      let current = this.head;
-      let previous = current;
-      let iteration = 0;
+list.removeFrom(2);
+console.log(list.printList());
 
-      if (index === 0) {
-        this.head = current.next;
-      } else {
-        while (iteration < index) {
-          iteration++;
-          previous = current;
-          current = current.next;
-        }
-      }
-    }
-  }
-}
+list.removeElement(20);
+console.log(list.printList());
+
+console.log(list.indexOf(40));
+console.log(list.isEmpty());
+console.log(list.sizeOfList());
