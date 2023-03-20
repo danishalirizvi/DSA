@@ -8,7 +8,9 @@
     "linkedlist": "nodemon LinkedList/index.js",
     "doublylinkedlist": "nodemon  DoublyLinkedList/index.js",
     "binaryTree": "nodemon BinaryTree/index.js",
-    "stack": "nodemon Stack/index.js"
+    "stack": "nodemon Stack/index.js",
+    "queueUsingArray": "nodemon Queue/UsingArray/index.js",
+    "queueUsingObject": "nodemon Queue/UsingObject/index.js"
   },
   "author": "",
   "license": "ISC"
