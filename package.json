@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon index.js",
     "linkedlist": "nodemon LinkedList/index.js",
-    "doublylinkedlist": "nodemon  DoublyLinkedList/index.js"
+    "doublylinkedlist": "nodemon  DoublyLinkedList/index.js",
+    "binaryTree": "nodemon BinaryTree/index.js"
   },
   "author": "",
   "license": "ISC"
