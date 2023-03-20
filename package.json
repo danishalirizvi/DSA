@@ -7,7 +7,8 @@
     "start": "nodemon index.js",
     "linkedlist": "nodemon LinkedList/index.js",
     "doublylinkedlist": "nodemon  DoublyLinkedList/index.js",
-    "binaryTree": "nodemon BinaryTree/index.js"
+    "binaryTree": "nodemon BinaryTree/index.js",
+    "stack": "nodemon Stack/index.js"
   },
   "author": "",
   "license": "ISC"
